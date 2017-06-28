@@ -29,7 +29,7 @@ import javax.swing.JLabel;
 import data.DataInterface;
 
 import java.awt.FlowLayout;
-
+//Klasse der GUI-Schicht
 public class GUI implements ActionListener {
 
 	private JFrame frame;
@@ -40,6 +40,7 @@ public class GUI implements ActionListener {
 
 	/**
 	 * Launch the application.
+	// Main Methode
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -120,7 +121,7 @@ public class GUI implements ActionListener {
 		// selectedZS.setInput(input.getText());
 
 	}
-
+//Actionlistener 
 	public void actionPerformed(ActionEvent e) {
 		ZahlZS selectedZS = zs.getItemAt(zs.getSelectedIndex());
 		selectedZS.setInput(input.getText());
@@ -142,7 +143,7 @@ public class GUI implements ActionListener {
 				output1.setText("-");
 				output2.setText("-");
 			} else if (b.checkinput(selectedZS.getInput()) == 3) {
-				error.setText("Eingabe enth‰lt ung¸ltiges Zeichen!");
+				error.setText("Eingabe enth√§lt ung√ºltiges Zeichen!");
 				zs1.setText("-");
 				zs2.setText("-");
 				output1.setText("-");
@@ -172,7 +173,7 @@ public class GUI implements ActionListener {
 				output1.setText("-");
 				output2.setText("-");
 			} else if (de.checkinput(selectedZS.getInput()) == 3) {
-				error.setText("Eingabe enth‰lt ung¸ltiges Zeichen!");
+				error.setText("Eingabe enth√§lt ung√ºltiges Zeichen!");
 				zs1.setText("-");
 				zs2.setText("-");
 				output1.setText("-");
@@ -203,7 +204,7 @@ public class GUI implements ActionListener {
 				output1.setText("-");
 				output2.setText("-");
 			} else if (h.checkinput(selectedZS.getInput()) == 3) {
-				error.setText("Eingabe enth‰lt ung¸ltiges Zeichen!");
+				error.setText("Eingabe enth√§lt ung√ºltiges Zeichen!");
 				zs1.setText("-");
 				zs2.setText("-");
 				output1.setText("-");
@@ -222,10 +223,10 @@ public class GUI implements ActionListener {
 		}
 
 	}
-
+// R√ºckgabe Array Mit Zahlensystem-Objekten
 	private ZahlZS[] getStandardZS() {
 		ZahlZS[] zs = new ZahlZS[3];
-		zs[0] = new ZahlZS("", 2, "Bin‰r");
+		zs[0] = new ZahlZS("", 2, "Bin√§r");
 		zs[1] = new ZahlZS("", 10, "Dezimal");
 		zs[2] = new ZahlZS("", 16, "Hexadezimal");
 		return zs;
