@@ -31,7 +31,7 @@ import data.DataInterface;
 import java.awt.FlowLayout;
 /**
  * Klasse der GUI-Schicht
- * @author Chamption Schwinn
+ * @author Champion Schwinn
  *
  */
 public class GUI implements ActionListener {
