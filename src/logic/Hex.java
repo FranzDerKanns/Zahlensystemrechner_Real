@@ -1,5 +1,6 @@
 package logic;
-
+//Unterklasse von "Calculator"
+//Ueberschreibt die Methode checkinput() (return ist ein Integer mit dem Errorlevel, der im Actionlistener im GUI analysiert wird)
 public class Hex extends Calculator {
 
 	public int checkinput(String inputt) {
