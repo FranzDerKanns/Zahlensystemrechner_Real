@@ -1,5 +1,6 @@
 package logic;
-
+//Unterklasse der Klasse "Calculator"
+//Ueberschreibt die Methode checkinput() (return ist ein Integer mit dem Errorlevel, der im Actionlistener im GUI analysiert wird)
 public class Bin extends Calculator {
 
 	public int checkinput(String input) {
