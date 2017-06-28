@@ -1,6 +1,10 @@
 package logic;
-//Klasse in der Logic-Schicht
-//Stellt ZahlZS-Objekte dar
+/**
+ * Klasse in der Logic-Schicht
+ * Stellt ZahlZS-Objekte dar
+ * @author Champion
+ *
+ */
 public class ZahlZS {
 
 	private String input;
@@ -10,39 +14,63 @@ public class ZahlZS {
 	public ZahlZS() {
 
 	}
-//Konstruktor mit Input, Format und Beschreibung als Parameter
+/**
+ * //Konstruktor mit Input, Format und Beschreibung als Parameter
+ * @param input
+ * @param format
+ * @param description
+ */
 	public ZahlZS(String input, int format, String description) {
 		super();
 		this.input = input;
 		this.format = format;
 		this.description = description;
 	}
-//Input-Getter
+/**
+ * Input-Getter
+ * @return
+ */
 	public String getInput() {
 		return input;
 	}
-//Input-Setter
+/**
+ * Input-Setter
+ * @param input
+ */
 	public void setInput(String input) {
 		this.input = input;
 	}
-//Format-Getter
+/**
+ * Format-Getter
+ * @return
+ */
 	public int getFormat() {
 		return format;
 	}
-//Format-Setter
+/**
+ * Format-Setter
+ * @param format
+ */
 	public void setFormat(int format) {
 		this.format = format;
 	}
-//Beschreibungs-Getter
+/**
+ * Beschreibungs-Getter
+ * @return
+ */
 	public String getDescription() {
 		return description;
 	}
-//Beschreibungs-Setter
+/**
+ * Beschreibungs-Setter
+ * @param description
+ */
 	public void setDescription(String description) {
 		this.description = description;
 	}
-//Gibt Beschreibung zurueck
-	@Override
+	/**
+	 * //Gibt Beschreibung zurueck
+	 */
 	public String toString() {
 		return description;
 	}

@@ -1,7 +1,13 @@
 package logic;
-//Verwendet das Interface "Calculation"
+/**
+ * Verwendet das Interface "Calculation"
+ * @author Schwinn
+ *
+ */
 public class BinDez implements Calculation {
-//Gibt das Resultat der Rechnung zurueck
+/**
+ * Gibt das Resultat der Rechnung zurueck
+ */
 	public String getoutput(String input) {
 		/*
 		 * String output = ""; int speicher = 0; for(int i = 0; i <

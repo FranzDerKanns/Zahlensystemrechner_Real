@@ -5,10 +5,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-//Datainterface (Data-Schicht)
+/**
+ * Datainterface (Data-Schicht)
+ * @author Schwinn
+ *
+ */
 public class DataInterface {
 	String history;
-//Fügt Input und Format des Inputs in ein Textfile
+
+	/**
+	 * F�gt Input und Format 
+	 * @param input
+	 * @param format
+	 */
 	public void add(String input, String format) {
 		try {
 			PrintWriter writer = new PrintWriter("file.txt", "UTF-8");
@@ -26,13 +35,17 @@ public class DataInterface {
 			// hier könnte Fehlermeldung stehen
 		}
 	}
-//Textfile wird ausgelesen, damit die Benutzereingabe ausgelesen werden kann
+	
+	/**
+	 * Textfile wird ausgelesen, damit die Benutzereingabe ausgelesen werden kann
+	 * @return
+	 */
 	public static String gethistory() {
 		String text = "";
 		try {
 			text = new String(Files.readAllBytes(Paths.get("file.txt")));
 		} catch (IOException e) {
-			// hier könnte Fehlermeldung stehen
+			// hier koennte Fehlermeldung stehen
 		}
 
 		File file = new File("file.txt");

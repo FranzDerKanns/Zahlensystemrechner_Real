@@ -29,7 +29,11 @@ import javax.swing.JLabel;
 import data.DataInterface;
 
 import java.awt.FlowLayout;
-//Klasse der GUI-Schicht
+/**
+ * Klasse der GUI-Schicht
+ * @author Chamption Schwinn
+ *
+ */
 public class GUI implements ActionListener {
 
 	private JFrame frame;
@@ -41,6 +45,8 @@ public class GUI implements ActionListener {
 	/**
 	 * Launch the application.
 	// Main Methode
+	 *
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -121,7 +127,9 @@ public class GUI implements ActionListener {
 		// selectedZS.setInput(input.getText());
 
 	}
-//Actionlistener 
+	/**
+	 * Actionlistener 
+	 */
 	public void actionPerformed(ActionEvent e) {
 		ZahlZS selectedZS = zs.getItemAt(zs.getSelectedIndex());
 		selectedZS.setInput(input.getText());
@@ -223,7 +231,10 @@ public class GUI implements ActionListener {
 		}
 
 	}
-// Rückgabe Array Mit Zahlensystem-Objekten
+	/**
+	 * Rueckgabe Array Mit Zahlensystem-Objekten
+	 * @return
+	 */
 	private ZahlZS[] getStandardZS() {
 		ZahlZS[] zs = new ZahlZS[3];
 		zs[0] = new ZahlZS("", 2, "Binär");

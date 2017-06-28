@@ -1,21 +1,31 @@
 package logic;
 
 import data.DataInterface;
-//Hauptklasse der Logic-Schicht (Management der Logic-Schicht)
-//Superklasse der Klassen "Bin", "Dez" und "Hex"
+/**
+ * Hauptklasse der Logic-Schicht (Management der Logic-Schicht)
+* Superklasse der Klassen "Bin", "Dez" und "Hex"
+ * @author Schwinn
+ *
+ */
 public class Calculator {
 
 	DataInterface d = new DataInterface();
-	//Abstrakte Methode, die durch die Unterklassen ueberschrieben werden
+	/**
+	 * Abstrakte Methode, die durch die Unterklassen ueberschrieben werden
+	 */
 	public void checkinput() {
 
 	}
-	//Methode getresult(x,x) wird vom Actionlistener aufgerufen und handhabt das weitere Vorgehen in der Logic-Schicht 
+	/**
+	 * Methode getresult(x,x) wird vom Actionlistener aufgerufen und handhabt das weitere Vorgehen in der Logic-Schicht 
+	 * @param input
+	 * @param format
+	 * @return
+	 */
 	public String[] getresult(String input, int format) {
 
 		ZahlZS src = new ZahlZS(input, format, "");
-		d.add(input, Integer.toString(format)); // Eigentlich würde src
-												// übergeben werden müssen
+		d.add(input, Integer.toString(format)); 
 		String Result1 = "";
 		String Result2 = "";
 		if (format == 2) {
